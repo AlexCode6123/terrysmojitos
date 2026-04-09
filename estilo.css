@@ -334,6 +334,7 @@ header {
     color: #00ff99;
     font-weight: bold;
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 /* WHATSAPP BUTTON */
@@ -612,6 +613,7 @@ h2 {
     color: #00ff99;
     font-weight: bold;
     font-size: 18px;
+    text-decoration: none;
 }
 
 /* PROMOS */
@@ -658,6 +660,114 @@ footer {
     text-align: center;
     padding: 20px;
     opacity: 0.6;
+}
+
+/* =========================================
+   GALERÍA DE SABORES (CSS GRID)
+   ========================================= */
+.galeria-sabores {
+    display: grid;
+    /* Crea columnas automáticas que no midan menos de 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.sabor-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 153, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sabor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 255, 153, 0.25);
+    border-color: rgba(0, 255, 153, 0.6);
+}
+
+.sabor-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Asegura que la imagen llene el espacio sin deformarse */
+    border-bottom: 2px solid rgba(0, 255, 153, 0.15);
+    transition: opacity 0.3s ease;
+}
+
+.sabor-card:hover .sabor-img {
+    opacity: 0.9;
+}
+
+.sabor-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Empuja el texto para que todas las tarjetas midan lo mismo */
+    text-align: center;
+}
+
+.sabor-info h3 {
+    color: #00ff99;
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+    text-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+}
+
+.sabor-info p {
+    color: #fff;
+    margin: 0;
+    font-size: 1.05rem;
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+/* =========================================
+   MENSAJE / SLOGAN ELEGANTE
+   ========================================= */
+.slogan-container {
+    text-align: center;
+    padding: 10px 20px 30px; /* Da un respiro visual antes del carrusel */
+    position: relative;
+    z-index: 5;
+}
+
+.slogan-text {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300; /* El peso ligero le da el toque elegante */
+    font-size: 2.2rem;
+    color: #ffffff;
+    letter-spacing: 3px; /* Separa las letras para mayor sofisticación */
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Ayuda a la legibilidad sobre fondos oscuros */
+}
+
+/* Línea decorativa sutil debajo del texto */
+.slogan-text::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #00ff99;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.6);
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .slogan-container {
+        padding: 15px 15px 20px;
+    }
+    .slogan-text {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
 }
 
 
