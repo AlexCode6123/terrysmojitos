@@ -4,141 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terry's Mojitos</title>
+<link rel="icon" href="favicons/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="favicons/apple-touch-icon-180x180.png" sizes="180x180">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0a0a0a;
-    color: white;
-    overflow-x: hidden;
-}
-
-/* FONDO HUMO */
-body::before {
-    content: "";
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(0,255,150,0.1) 0%, transparent 70%);
-    animation: smoke 10s infinite linear;
-    z-index: -1;
-}
-
-@keyframes smoke {
-    0% { transform: translate(-10%, -10%); }
-    50% { transform: translate(-5%, -15%); }
-    100% { transform: translate(-10%, -10%); }
-}
-
-/* HEADER */
-header {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-header h1 {
-    font-size: 40px;
-    color: #00ff99;
-    text-shadow: 0 0 20px #00ff99;
-}
-
-header p {
-    opacity: 0.7;
-}
-
-/* SECCIONES */
-.section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-h2 {
-    color: #00ff99;
-    margin-bottom: 20px;
-}
-
-/* TARJETAS */
-.card {
-    background: #111;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    box-shadow: 0 0 20px rgba(0,255,150,0.2);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #00ff99;
-}
-
-.price {
-    color: #00ff99;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* PROMOS */
-.promo {
-    background: linear-gradient(90deg, #00ff99, #00cc66);
-    color: black;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    font-weight: bold;
-    box-shadow: 0 0 20px #00ff99;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 10px #00ff99; }
-    50% { box-shadow: 0 0 25px #00ff99; }
-    100% { box-shadow: 0 0 10px #00ff99; }
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 20px #25D366;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    opacity: 0.6;
-}
-</style>
 
 </head>
 
 <body>
 
+<nav class="barra_navegacion">
+    <div class="nav-logo">
+        <img src="Terry_Logo.png" alt="Terry's Mojitos Logo">
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul class="nav-menu">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="https://wa.me/56968099817?text=Hola%20quiero%20pedir%20mojitos%20🍹" target="_blank">Pedir Ahora</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>    
+
 <header>
-<h1>🔥 TERRY'S MOJITOS 🔥</h1>
-<p>Refresca tu noche con el mejor sabor 🍹</p>
+    <div class="header-background">
+        <img src="Terry_Mojito2_SinFondo.png" alt="Terry's Mojitos Logo" class="header-logo">
+    </div>
+    <div class="header-content">
+    </div>
 </header>
 
-<div class="section">
+<section class="carousel-wrapper">
+    <div class="carousel">
+        <div class="carousel-track">
+            <!-- Versión Web -->
+            <article class="carousel-card desktop-only">
+                <img src="Mojito_Frutilla_Horizontal.png" alt="Mojito Frutilla" />
+                <div class="carousel-card-content">
+                    <h3>Mojito Frutilla</h3>
+                    <p>Frutal, dulce y bien cargado para tus mejores fotos.</p>
+                </div>
+            </article>
+            <article class="carousel-card desktop-only">
+                <img src="Mojito_Frutilla_Horizontal.png" alt="Mojito Frutilla" />
+                <div class="carousel-card-content">
+                    <h3>Mojito Frutilla</h3>
+                    <p>Frutal, dulce y bien cargado para tus mejores fotos.</p>
+                </div>
+            </article>
+            <article class="carousel-card desktop-only">
+                <img src="Mojito_Frutilla_Horizontal.png" alt="Mojito Frutilla" />
+                <div class="carousel-card-content">
+                    <h3>Mojito Frutilla</h3>
+                    <p>Frutal, dulce y bien cargado para tus mejores fotos.</p>
+                </div>
+            </article>
+
+            <!-- Versión Móvil -->
+            <article class="carousel-card mobile-only">
+                <img src="Mojito_Frutilla.jpeg" alt="Mojito Frutilla" />
+                <div class="carousel-card-content">
+                    <h3>Mojito Frutilla</h3>
+                    <p>Frutal, dulce y bien cargado para tus mejores fotos.</p>
+                </div>
+            </article>
+            <article class="carousel-card mobile-only">
+                <img src="Mojito_Frambuesa.jpeg" alt="Mojito Frambuesa" />
+                <div class="carousel-card-content">
+                    <h3>Mojito Frambuesa</h3>
+                    <p>Ultra refrescante con pulpa natural y limón fresco.</p>
+                </div>
+            </article>
+        </div>
+        <button class="carousel-button prev" aria-label="Anterior">‹</button>
+        <button class="carousel-button next" aria-label="Siguiente">›</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" data-slide="0"></button>
+            <button class="carousel-dot" data-slide="1"></button>
+        </div>
+    </div>
+</section>
+
+<div class="section" id="menu">
 <h2>🍹 MENÚ PREMIUM</h2>
 
 <div class="card">
@@ -158,7 +112,7 @@ Mojito Litro<br>
 
 </div>
 
-<div class="section">
+<div class="section" id="promociones">
 <h2>💥 PROMOCIONES</h2>
 
 <div class="promo">
@@ -171,9 +125,11 @@ Mojito Litro<br>
 
 </div>
 
-<div class="section">
+<div class="section" id="contacto">
 <h2>🚀 PIDE AHORA</h2>
-<p>Haz tu pedido en segundos por WhatsApp</p>
+<p>Haz tu pedido en segundos por WhatsApp o Ven visitarnos.</p>
+<p>Encuentranos en Av Graciela Valenzuela 807, cerca de la plaza </Label></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.828839440965!2d-73.16477962388556!3d-37.01387947218693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669c6b43040988f%3A0xa0d1fa67d2034e41!2sGraciela%20Valenzuela%20807%2C%204201829%20Coronel%2C%20B%C3%ADo%20B%C3%ADo!5e0!3m2!1ses-419!2scl!4v1775691487431!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 <a class="whatsapp" href="https://wa.me/56968099817?text=Hola%20quiero%20pedir%20mojitos%20🍹" target="_blank">
@@ -183,6 +139,6 @@ Mojito Litro<br>
 <footer>
 Terry's Mojitos © 2026
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
