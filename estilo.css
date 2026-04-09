@@ -629,6 +629,29 @@ h2 {
     animation: pulse 2s infinite;
 }
 
+.promos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas iguales */
+    gap: 15px; /* Espacio entre los botones */
+    max-width: 900px; /* Aumentamos el ancho para que quepan dos al lado */
+    margin: 0 auto;
+}
+
+/* Ajuste a la clase .promo existente para que no limite tanto el ancho */
+.promo {
+    width: 100%; /* Que ocupe el espacio de su columna de la cuadrícula */
+    max-width: none; /* Quitamos el límite de 400px para que el Grid mande */
+    margin: 0; /* El espacio lo maneja el 'gap' del contenedor */
+    /* Mantén el resto de tus estilos (background, animación pulse, etc.) */
+}
+
+/* RESPONSIVE: Si la pantalla es pequeña (celular), que vuelvan a estar uno arriba del otro */
+@media (max-width: 768px) {
+    .promos-container {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}
+
 @keyframes pulse {
     0% { box-shadow: 0 0 10px #00ff99; }
     50% { box-shadow: 0 0 25px #00ff99; }
@@ -769,5 +792,8 @@ footer {
         letter-spacing: 1.5px;
     }
 }
+
+
+
 
 
