@@ -8,14 +8,14 @@ const datosCarrusel = [
         imagen: 'Promo1_Horizontal.png',
         titulo: '¡OFERTA ÚNICA!',
         descripcion: 'Aprovecha esta oferta especial por tiempo limitado.',
-        link: 'https://wa.me/56968099817?text=Hola%20quiero%20pedir%20la%20promo%20de%20$15.000'
+        link: 'https://wa.me/56968126156?text=Hola%20quiero%20pedir%20la%20promo%20de%20$15.000'
     },
     {
         tipo: 'web',
         imagen: 'Promo2_Horizontal.png',
         titulo: '¡OFERTA ÚNICA!',
         descripcion: 'Aprovecha esta oferta especial por tiempo limitado.',
-        link: 'https://wa.me/56968099817?text=Hola%20quiero%20pedir%20la%20promo%20de%20$18.000'
+        link: 'https://wa.me/56968126156?text=Hola%20quiero%20pedir%20la%20promo%20de%20$18.000'
     },
     
     // IMÁGENES MÓVIL (Verticales)
@@ -24,14 +24,14 @@ const datosCarrusel = [
         imagen: 'Promo1_vertical.jpeg',
         titulo: '¡OFERTA ÚNICA!',
         descripcion: 'Aprovecha esta oferta especial por tiempo limitado.',
-        link: 'https://wa.me/56968099817?text=Hola%20quiero%20pedir%20la%20promo%20de%20$15.000' 
+        link: 'https://wa.me/56968126156?text=Hola%20quiero%20pedir%20la%20promo%20de%20$15.000' 
     },
     {
         tipo: 'movil',
         imagen: 'Promo2_vertical.jpeg',
         titulo: '¡OFERTA ÚNICA!',
         descripcion: 'Aprovecha esta oferta especial por tiempo limitado.',
-        link: 'https://wa.me/56968099817?text=Hola%20quiero%20pedir%20la%20promo%20de%20$18.000'
+        link: 'https://wa.me/56968126156?text=Hola%20quiero%20pedir%20la%20promo%20de%20$18.000'
     }
 ];
 // ==========================================
